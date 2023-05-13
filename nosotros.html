@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Bazar En Linea | Nosotros</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IM+Fell+DW+Pica&family=Ysabeau:wght@200&display=swap');
+			img.icon{
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+			}
+			a{
+				color: black;
+				text-decoration: none;
+			}
+			a:hover{
+				color: #493843;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			function toggleform(){
+				var x = document.getElementById("unete");
+				if (x.style.display === "none") {
+					document.getElementById("txtform").innerHTML = "   Ocultar Formulario   ";
+					x.style.display = "block";
+				} else {
+					document.getElementById("txtform").innerHTML = "   ⬐¿Quieres formar parte de nosotros?⬎   ";
+					x.style.display = "none";
+				}			
+			}
+			function sent(){
+				document.getElementById('enviadotxt').style.display = 'block';
+				document.getElementById('unete').style.display = 'none';
+				document.getElementById('btnform').style.display = 'none';
+			}
+		</script>
+	</head>
+	<body style="background-color:#e4ede9; margin:0;">
+		<div width="100%" class="sticky" style="background-color:A0B2A6; opacity:99%; border: 2px solid #61988E;">
+			<table width="100%">
+				<tr>
+					<td width="40%" style="line-height: 10%;">
+						<br>
+						<p style="font-family: 'Abril Fatface'; font-size: 50px; padding-left: 50px;">ivy</p>
+						<br>
+						
+					</td>
+					<td width="20%" style="font-family:'Ysabeau', sans-serif; font-size: 15px;">
+						<a href="">Página Principal</a>
+					</td>
+					<td width="20%" style="font-family:'Ysabeau', sans-serif; font-size: 15px;"> 
+						<a href="">Nosotros</a>
+					</td>
+					<td width="20%" style="font-family:'Ysabeau', sans-serif; font-size: 15px;">
+						<a href="">Contacto</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<center>
+		<p style="font-family: 'Abril Fatface'; font-size: 50px;">Nosotros</p>
+		
+		<table width="70%">
+			<tr>
+				<td width="33%" style="padding-left:25px; padding-right:25px;">
+				<center>
+					<img src="imgs/seventh.jpg" class="icon"></img>
+					<h2 style="font-family: 'IM Fell DW Pica';">Noé Santoscoy</h2>
+					<p align="justify" style="font-family: 'Ysabeau', sans-serif;">Creador detrás de la marca "Seventh Slice Cakes". Es un estudiante de preparatoria que busca darse a conocer a través de la repostería.</p>
+				</center>
+				</td>
+				<td width="33%" style="padding-left:25px; padding-right:25px;">
+				<center>
+					<img src="imgs/marious.png" class="icon"></img>
+					<h2 style="font-family: 'IM Fell DW Pica';">Mario Laborin</h2>
+					<p align="justify" style="font-family: 'Ysabeau', sans-serif;">Su marca es un éxito en su preparatoria. Mario, su fundador y la persona que se encarga de toda su marca (Mario Trapito), nos brinda una experiencia única con sus productos.</p>
+				</center>
+				</td>
+				<td width="33%" style="padding-left:25px; padding-right:25px;">
+				<center>
+					<img src="imgs/ivyus.png" class="icon"></img>
+					<h2 style="font-family: 'IM Fell DW Pica';">ivy</h2>
+					<p align="justify" style="font-family: 'Ysabeau', sans-serif;">Detrás de esta página se encuentran cinco estudiantes de preparatoria que buscan darse a conocer a través del internet.</p>
+				</center>
+				</td>
+			</tr>
+		</table>
+		
+		<br>
+		
+		<button id="btnform" onclick="javascript:toggleform()" onmouseover="document.getElementById('btnform').style.color = 'white'" onmouseout="document.getElementById('btnform').style.color = 'black'" style="background-color:A0B2A6; border: none; font-family: 'Ysabeau', sans-serif;"><h1 id="txtform">   ⬐¿Quieres formar parte de nosotros?⬎   </h1></button>
+		
+		<br><br>
+		
+		<form id="unete" action="javascript:sent()" style="font-family:'Ysabeau', sans-serif;display:none;">
+			Nombre:<br>
+			<input type="text" name="nombre"><br><br>
+			Nombre de tu marca:<br>
+			<input type="text" name="marca"><br><br>
+			Productos que ofreces:<br>
+			<input type="text" name="productos"><br><br>
+			Número de teléfono o correo:<br>
+			<input type="text" name="contacto"><br><br>
+			<input type="submit" value="Enviar">
+		</form>
+		
+		<h3 id="enviadotxt" style="font-family:'Ysabeau', sans-serif;display:none;">Gracias! Te contactaremos lo más pronto posible para más información.</h3>
+		
+		</center>
+	</body>
+</html>
